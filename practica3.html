@@ -4,24 +4,43 @@
     <meta charset="utf-8">
     <title>Practica 3</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" href="css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     <script src="js/jquery.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
   </head>
-  <body>
-    <h1>FootBall</h1>
+  <body class="bg-danger">
 
+    <div id="idContainer" class="container text-center bg-primary">
+    <h2>League</h2>
+    <p>Chouse a league</p>
+    <div class="dropdown">
+      <select id="listaLiga" class="form-control">
+      </select>
+    </div>
+    <h2>Teams</h2>
+    <p>Chouse a team</p>
+    <div class="dropdown">
+      <select id="listaEquipo" class="form-control">
+      </select>
+    </div>
+
+    <div class="container text-center">
+      <br>
+      <label>Players</label>
+      <div id="divJugadores" class="row">
+        <div class="col-sm-4">
+          <img src="img/player.png" class="img-small" alt="Cinque Terre" style="width:50%">
+          <br>
+          <h2>No Players</h2>
+        </div>
+      </div>
+    </div>
+    </div>
 
 
 
     <script src="js/jquery.min.js"></script>
-    <script>
-    $(document).ready(function(){
-        $("button").click(function(){
-            $("#div1").load("demo_test.txt");
-        });
-    });
-    </script>
+    <script src="js/main.js"></script>
 
   </body>
 </html>
